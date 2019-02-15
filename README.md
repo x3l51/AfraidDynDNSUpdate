@@ -1,5 +1,5 @@
 # AfraidDynDNSUpdate
-Updates your the IPv6 of your device via Free [DNS Afraid.org](https://freedns.afraid.org) so of course you need an account there (which is free) and you need to have already set a [subdomain](https://freedns.afraid.org/subdomain/) to use.
+Updates the IPv6 of your device via [Free DNS Afraid.org](https://freedns.afraid.org) so of course you need an account there (which is free) and you need to have already set a [subdomain](https://freedns.afraid.org/subdomain/) to use.
 
 Download and start the script:
 ```
