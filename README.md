@@ -16,10 +16,10 @@ On first run it asks for your credentials:
 
 Don't worry, your credentials aren't stored in cleartext.
 
-Make it executable and put it in a cronjob to have it run like, idk, every 30 minutes.
+Make it executable and put it in a cronjob to have it run like, idk, like every 30 minutes.
 
 ```
-  sudo chmod +x network_scan_email_compare.py
+  sudo chmod +x afraidUpdate.py 
   sudo crontab -e
-  */30 * * * * cd /filePath/to/yourScript && python3 network_scan_email_compare.py
+  */30 * * * * cd /filePath/to/yourScript && python3 afraidUpdate.py 
 ```
