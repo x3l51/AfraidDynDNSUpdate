@@ -1,4 +1,4 @@
-# !/usr/bin/env python3.6
+# !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # afraidUpdate.py
 
@@ -21,7 +21,7 @@ except ImportError:
     installQuest = input(CRED + "Import of module \"Pycrypto\" failed." + CEND + " Install it now? (y/n) ").lower()
     if installQuest in ('y', 'yes'):
         print("Installing \"Pycrypto\" now.")
-        subprocess.call("sudo -H python3.6 -m pip install pyCrypto > {}".format(os.devnull), shell=True)
+        subprocess.call("sudo -H python3 -m pip install pyCrypto > {}".format(os.devnull), shell=True)
         print("Installing \"Pycrypto\" successful.")
         from Crypto.Cipher import AES
     else:
@@ -88,7 +88,7 @@ def func():
             userPassword = cipher.decrypt(base64.b64decode(userPassword))
             userPassword = userPassword.decode('utf8').strip()
 
-            updateLink = "curl https://" + userName + ":" + userPassword + "@freedns.afraid.org/nic/update?hostname=" + dyndnsUrl + "&myip=" + stdoutdataIP6pub
+            updateLink = "curl \"https://" + userName + ":" + userPassword + "@freedns.afraid.org/nic/update?hostname=" + dyndnsUrl + "&myip=" + stdoutdataIP6pub + "\""
             subprocess.getoutput(updateLink)
     except:
         print("Something went wrong, let's try again.")
